@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+.main-box {
+    border: 1px solid #333;
+    /* border-radius: 10px; */
+    /* padding: 20px; */
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
+    /* overflow: hidden; */
+}
+
+.hand-container {
+    position: relative;
+    width: 500px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.hand-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hand-tone {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.ring {
+    z-index: 10;
+}
+
+#skinSlider {
+    position: absolute;
+    /* margin-top: 20px; */
+    width: 80%;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    cursor: grab;
+    z-index: 10;
+}
